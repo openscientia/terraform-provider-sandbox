@@ -5,4 +5,4 @@ resource:
   - '(current-resource|[Cc]urrent [Rr]esource|existing resource)'
 
 new-data-source:
-  - '(new-data-source|[Nn]ew [Dd]ata [Ss]ource)|[Aa]dd [Nn]ew [Dd]ata [Ss]ource)'
+  - '(new-data-source|[Nn]ew [Dd]ata [Ss]ource|[Aa]dd [Nn]ew [Dd]ata [Ss]ource)'
