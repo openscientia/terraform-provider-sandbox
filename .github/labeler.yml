@@ -1,5 +1,5 @@
 new-resource:
-  - '(new-resource|[Nn]ew [Rr]esource)|[Aa]dd [Nn]ew [Rr]esource)'
+  - '(new-resource|[Nn]ew [Rr]esource|[Aa]dd [Nn]ew [Rr]esource)'
 
 resource:
   - '(current-resource|[Cc]urrent [Rr]esource|existing resource)'
