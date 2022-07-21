@@ -63,6 +63,9 @@ body:
     attributes:
       label: Additional Information
       description: Are there any additional details about your environment, workflow, or recent changes that might be relevant? Have you discovered a workaround? Are there links to other related issues?
+      placeholder: |
+        Relates #X
+        Closes #X
     validations:
       required: false
   - type: checkboxes
