@@ -39,7 +39,11 @@ body:
       label: Proposal
       description: What solutions would you prefer?
       value: |
-        <!--- Add more information --->
+        <!--- Add other relevant information below --->
+
+        ...
+        
+        <!--- Potential Terraform Configuration --->
         ```hcl
         # Copy-paste Terraform configurations here
         ```
