@@ -40,7 +40,7 @@ body:
       description: What solutions would you prefer?
       value: |
         ```hcl
-        # Copy-paste Terraform configurations here
+        # Add Terraform configurations here
         ```
 
         <!--- Add other relevant information below --->
