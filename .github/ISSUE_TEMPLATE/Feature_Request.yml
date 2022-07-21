@@ -17,10 +17,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: affected-resource-name
+    id: affected-resources
     attributes:
-      label: Affected Resource(s)
-      description: What resource(s) are affected?
+      label: New or Affected Resource(s)
+      description: Please list the new or affected resources and data sources.
       value: |
         - atlassian_xxx
     validations:
@@ -39,7 +39,6 @@ body:
       label: Proposal
       description: What solutions would you prefer?
       value: |
-        <!--- Potential Terraform Configuration --->
         ```hcl
         # Copy-paste Terraform configurations here
         ```
