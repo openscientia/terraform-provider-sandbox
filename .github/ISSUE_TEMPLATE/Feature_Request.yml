@@ -21,7 +21,8 @@ body:
     attributes:
       label: Affected Resource(s)
       description: What resource(s) are affected?
-      placeholder: "- atlassian_<product>_<resource-name>"
+      value: |
+      "- atlassian_xxx"
     validations:
       required: true
   - type: textarea
