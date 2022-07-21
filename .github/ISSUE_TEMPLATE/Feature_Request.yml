@@ -37,7 +37,7 @@ body:
     attributes:
       label: Proposal
       description: What solutions would you prefer?
-      placeholder: "```hcl\n resource \"atlassian_xxx\" \"this\" {\n  ...}\n```"
+      placeholder: "```hcl\n resource \"atlassian_xxx\" \"this\" {\n    ...\n}\n```"
     validations:
       required: true
   - type: dropdown
