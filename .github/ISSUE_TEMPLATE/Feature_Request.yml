@@ -38,7 +38,13 @@ body:
     attributes:
       label: Proposal
       description: What solutions would you prefer?
-      placeholder: "```hcl\n resource \"atlassian_xxx\" \"this\" {\n    ...\n}\n```"
+      value: |
+        <!--- Add more information --->
+        ```hcl
+        # Copy-paste Terraform configurations here
+
+        }
+        ```
     validations:
       required: true
   - type: dropdown

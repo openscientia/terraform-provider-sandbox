@@ -14,7 +14,7 @@ body:
       label: Affected Resources
       description: What resource(s) are affected?
       value: |
-        "- atlassian_xxx"
+        - atlassian_xxx
     validations:
       required: true
   - type: textarea
