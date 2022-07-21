@@ -16,18 +16,6 @@ body:
       placeholder: Output of `terraform version` from configuration directory
     validations:
       required: true
-  - type: dropdown
-    id: affected-resource-type
-    attributes:
-      label: affected-resource-type
-      description: What type of resource(s) are affected? 
-      options:
-        - new-resource
-        - new-data-source
-        - current-resource
-        - current-data-source
-    validations:
-      required: true
   - type: textarea
     id: affected-resource-name
     attributes:
@@ -49,7 +37,7 @@ body:
     attributes:
       label: Proposal
       description: What solutions would you prefer?
-      placeholder: Description of proposed solutions.
+      placeholder: "```hcl resource "atlassian_xxx_xxx" "this" {} ```"
     validations:
       required: true
   - type: dropdown
