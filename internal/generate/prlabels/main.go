@@ -19,7 +19,7 @@ import (
 )
 
 const (
-	filename = `../../../.github/labeler-pr-test.yml`
+	filename = `../../../.github/labeler-pr-labels.yml`
 )
 
 type templateData struct {
