@@ -1,3 +1,3 @@
-//go:generate go run main.go
-
 package prlabels
+
+//go:generate go run main.go

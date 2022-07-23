@@ -1,9 +1,6 @@
-//go:build generate
-// +build generate
+//go:build ignore
 
 package main
-
-// package prlabels
 
 import (
 	"bytes"
