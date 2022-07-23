@@ -26,242 +26,242 @@ repository:
 tests:
   - '**/*_test.go'
 jira/announcementbanner:
-  - 'internal/provider/*announcement_banner.go'
-  - 'internal/provider/*announcement_banner_test.go'
+  - 'internal/provider/*jira_announcement_banner.go'
+  - 'internal/provider/*jira_announcement_banner_test.go'
 jira/appmigration:
-  - 'internal/provider/*app_migration.go'
-  - 'internal/provider/*app_migration_test.go'
-jira/apppropertie:
-  - 'internal/provider/*app_propertie.go'
-  - 'internal/provider/*app_propertie_test.go'
+  - 'internal/provider/*jira_app_migration.go'
+  - 'internal/provider/*jira_app_migration_test.go'
+jira/appproperty:
+  - 'internal/provider/*jira_app_property.go'
+  - 'internal/provider/*jira_app_property_test.go'
 jira/applicationrole:
-  - 'internal/provider/*application_role.go'
-  - 'internal/provider/*application_role_test.go'
+  - 'internal/provider/*jira_application_role.go'
+  - 'internal/provider/*jira_application_role_test.go'
 jira/auditrecord:
-  - 'internal/provider/*audit_record.go'
-  - 'internal/provider/*audit_record_test.go'
+  - 'internal/provider/*jira_audit_record.go'
+  - 'internal/provider/*jira_audit_record_test.go'
 jira/avatar:
-  - 'internal/provider/*avatar.go'
-  - 'internal/provider/*avatar_test.go'
+  - 'internal/provider/*jira_avatar.go'
+  - 'internal/provider/*jira_avatar_test.go'
 jira/dashboard:
-  - 'internal/provider/*dashboard.go'
-  - 'internal/provider/*dashboard_test.go'
+  - 'internal/provider/*jira_dashboard.go'
+  - 'internal/provider/*jira_dashboard_test.go'
 jira/dynamicmodule:
-  - 'internal/provider/*dynamic_module.go'
-  - 'internal/provider/*dynamic_module_test.go'
+  - 'internal/provider/*jira_dynamic_module.go'
+  - 'internal/provider/*jira_dynamic_module_test.go'
 jira/filter:
-  - 'internal/provider/*filter.go'
-  - 'internal/provider/*filter_test.go'
+  - 'internal/provider/*jira_filter.go'
+  - 'internal/provider/*jira_filter_test.go'
 jira/filtersharing:
-  - 'internal/provider/*filter_sharing.go'
-  - 'internal/provider/*filter_sharing_test.go'
+  - 'internal/provider/*jira_filter_sharing.go'
+  - 'internal/provider/*jira_filter_sharing_test.go'
 jira/group:
-  - 'internal/provider/*group.go'
-  - 'internal/provider/*group_test.go'
+  - 'internal/provider/*jira_group.go'
+  - 'internal/provider/*jira_group_test.go'
 jira/groupanduserpicker:
-  - 'internal/provider/*group_and_user_picker.go'
-  - 'internal/provider/*group_and_user_picker_test.go'
+  - 'internal/provider/*jira_group_and_user_picker.go'
+  - 'internal/provider/*jira_group_and_user_picker_test.go'
 jira/instanceinformation:
-  - 'internal/provider/*instance_information.go'
-  - 'internal/provider/*instance_information_test.go'
+  - 'internal/provider/*jira_instance_information.go'
+  - 'internal/provider/*jira_instance_information_test.go'
 jira/issue:
-  - 'internal/provider/*issue.go'
-  - 'internal/provider/*issue_test.go'
+  - 'internal/provider/*jira_issue.go'
+  - 'internal/provider/*jira_issue_test.go'
 jira/issueattachment:
-  - 'internal/provider/*issue_attachment.go'
-  - 'internal/provider/*issue_attachment_test.go'
+  - 'internal/provider/*jira_issue_attachment.go'
+  - 'internal/provider/*jira_issue_attachment_test.go'
 jira/issuecomment:
-  - 'internal/provider/*issue_comment.go'
-  - 'internal/provider/*issue_comment_test.go'
-jira/issuecommentpropertie:
-  - 'internal/provider/*issue_comment_propertie.go'
-  - 'internal/provider/*issue_comment_propertie_test.go'
+  - 'internal/provider/*jira_issue_comment.go'
+  - 'internal/provider/*jira_issue_comment_test.go'
+jira/issuecommentproperty:
+  - 'internal/provider/*jira_issue_comment_property.go'
+  - 'internal/provider/*jira_issue_comment_property_test.go'
 jira/issuecustomfieldcontext:
-  - 'internal/provider/*issue_custom_field_context.go'
-  - 'internal/provider/*issue_custom_field_context_test.go'
+  - 'internal/provider/*jira_issue_custom_field_context.go'
+  - 'internal/provider/*jira_issue_custom_field_context_test.go'
 jira/issuecustomfieldoption:
-  - 'internal/provider/*issue_custom_field_option.go'
-  - 'internal/provider/*issue_custom_field_option_test.go'
+  - 'internal/provider/*jira_issue_custom_field_option.go'
+  - 'internal/provider/*jira_issue_custom_field_option_test.go'
 jira/issuefield:
-  - 'internal/provider/*issue_field.go'
-  - 'internal/provider/*issue_field_test.go'
+  - 'internal/provider/*jira_issue_field.go'
+  - 'internal/provider/*jira_issue_field_test.go'
 jira/issuefieldconfiguration:
-  - 'internal/provider/*issue_field_configuration.go'
-  - 'internal/provider/*issue_field_configuration_test.go'
+  - 'internal/provider/*jira_issue_field_configuration.go'
+  - 'internal/provider/*jira_issue_field_configuration_test.go'
 jira/issuelink:
-  - 'internal/provider/*issue_link.go'
-  - 'internal/provider/*issue_link_test.go'
+  - 'internal/provider/*jira_issue_link.go'
+  - 'internal/provider/*jira_issue_link_test.go'
 jira/issuelinktype:
-  - 'internal/provider/*issue_link_type.go'
-  - 'internal/provider/*issue_link_type_test.go'
+  - 'internal/provider/*jira_issue_link_type.go'
+  - 'internal/provider/*jira_issue_link_type_test.go'
 jira/issuenavigatorsetting:
-  - 'internal/provider/*issue_navigator_setting.go'
-  - 'internal/provider/*issue_navigator_setting_test.go'
+  - 'internal/provider/*jira_issue_navigator_setting.go'
+  - 'internal/provider/*jira_issue_navigator_setting_test.go'
 jira/issuenotificationscheme:
-  - 'internal/provider/*issue_notification_scheme.go'
-  - 'internal/provider/*issue_notification_scheme_test.go'
-jira/issueprioritie:
-  - 'internal/provider/*issue_prioritie.go'
-  - 'internal/provider/*issue_prioritie_test.go'
-jira/issuepropertie:
-  - 'internal/provider/*issue_propertie.go'
-  - 'internal/provider/*issue_propertie_test.go'
+  - 'internal/provider/*jira_issue_notification_scheme.go'
+  - 'internal/provider/*jira_issue_notification_scheme_test.go'
+jira/issuepriority:
+  - 'internal/provider/*jira_issue_priority.go'
+  - 'internal/provider/*jira_issue_priority_test.go'
+jira/issueproperty:
+  - 'internal/provider/*jira_issue_property.go'
+  - 'internal/provider/*jira_issue_property_test.go'
 jira/issueremotelink:
-  - 'internal/provider/*issue_remote_link.go'
-  - 'internal/provider/*issue_remote_link_test.go'
+  - 'internal/provider/*jira_issue_remote_link.go'
+  - 'internal/provider/*jira_issue_remote_link_test.go'
 jira/issueresolution:
-  - 'internal/provider/*issue_resolution.go'
-  - 'internal/provider/*issue_resolution_test.go'
+  - 'internal/provider/*jira_issue_resolution.go'
+  - 'internal/provider/*jira_issue_resolution_test.go'
 jira/issuesearch:
-  - 'internal/provider/*issue_search.go'
-  - 'internal/provider/*issue_search_test.go'
+  - 'internal/provider/*jira_issue_search.go'
+  - 'internal/provider/*jira_issue_search_test.go'
 jira/issuesecuritylevel:
-  - 'internal/provider/*issue_security_level.go'
-  - 'internal/provider/*issue_security_level_test.go'
+  - 'internal/provider/*jira_issue_security_level.go'
+  - 'internal/provider/*jira_issue_security_level_test.go'
 jira/issuesecurityscheme:
-  - 'internal/provider/*issue_security_scheme.go'
-  - 'internal/provider/*issue_security_scheme_test.go'
+  - 'internal/provider/*jira_issue_security_scheme.go'
+  - 'internal/provider/*jira_issue_security_scheme_test.go'
 jira/issuetype:
-  - 'internal/provider/*issue_type.go'
-  - 'internal/provider/*issue_type_test.go'
-jira/issuetypepropertie:
-  - 'internal/provider/*issue_type_propertie.go'
-  - 'internal/provider/*issue_type_propertie_test.go'
+  - 'internal/provider/*jira_issue_type.go'
+  - 'internal/provider/*jira_issue_type_test.go'
+jira/issuetypeproperty:
+  - 'internal/provider/*jira_issue_type_property.go'
+  - 'internal/provider/*jira_issue_type_property_test.go'
 jira/issuetypescheme:
-  - 'internal/provider/*issue_type_scheme.go'
-  - 'internal/provider/*issue_type_scheme_test.go'
+  - 'internal/provider/*jira_issue_type_scheme.go'
+  - 'internal/provider/*jira_issue_type_scheme_test.go'
 jira/issuetypescreenscheme:
-  - 'internal/provider/*issue_type_screen_scheme.go'
-  - 'internal/provider/*issue_type_screen_scheme_test.go'
+  - 'internal/provider/*jira_issue_type_screen_scheme.go'
+  - 'internal/provider/*jira_issue_type_screen_scheme_test.go'
 jira/issuevote:
-  - 'internal/provider/*issue_vote.go'
-  - 'internal/provider/*issue_vote_test.go'
+  - 'internal/provider/*jira_issue_vote.go'
+  - 'internal/provider/*jira_issue_vote_test.go'
 jira/issuewatcher:
-  - 'internal/provider/*issue_watcher.go'
-  - 'internal/provider/*issue_watcher_test.go'
+  - 'internal/provider/*jira_issue_watcher.go'
+  - 'internal/provider/*jira_issue_watcher_test.go'
 jira/issueworklog:
-  - 'internal/provider/*issue_worklog.go'
-  - 'internal/provider/*issue_worklog_test.go'
-jira/issueworklogpropertie:
-  - 'internal/provider/*issue_worklog_propertie.go'
-  - 'internal/provider/*issue_worklog_propertie_test.go'
+  - 'internal/provider/*jira_issue_worklog.go'
+  - 'internal/provider/*jira_issue_worklog_test.go'
+jira/issueworklogproperty:
+  - 'internal/provider/*jira_issue_worklog_property.go'
+  - 'internal/provider/*jira_issue_worklog_property_test.go'
 jira/jiraexpression:
-  - 'internal/provider/*jira_expression.go'
-  - 'internal/provider/*jira_expression_test.go'
+  - 'internal/provider/*jira_jira_expression.go'
+  - 'internal/provider/*jira_jira_expression_test.go'
 jira/jirasetting:
-  - 'internal/provider/*jira_setting.go'
-  - 'internal/provider/*jira_setting_test.go'
+  - 'internal/provider/*jira_jira_setting.go'
+  - 'internal/provider/*jira_jira_setting_test.go'
 jira/jql:
-  - 'internal/provider/*jql.go'
-  - 'internal/provider/*jql_test.go'
+  - 'internal/provider/*jira_jql.go'
+  - 'internal/provider/*jira_jql_test.go'
 jira/label:
-  - 'internal/provider/*label.go'
-  - 'internal/provider/*label_test.go'
+  - 'internal/provider/*jira_label.go'
+  - 'internal/provider/*jira_label_test.go'
 jira/myself:
-  - 'internal/provider/*myself.go'
-  - 'internal/provider/*myself_test.go'
+  - 'internal/provider/*jira_myself.go'
+  - 'internal/provider/*jira_myself_test.go'
 jira/permission:
-  - 'internal/provider/*permission.go'
-  - 'internal/provider/*permission_test.go'
+  - 'internal/provider/*jira_permission.go'
+  - 'internal/provider/*jira_permission_test.go'
 jira/permissionscheme:
-  - 'internal/provider/*permission_scheme.go'
-  - 'internal/provider/*permission_scheme_test.go'
+  - 'internal/provider/*jira_permission_scheme.go'
+  - 'internal/provider/*jira_permission_scheme_test.go'
 jira/project:
-  - 'internal/provider/*project.go'
-  - 'internal/provider/*project_test.go'
+  - 'internal/provider/*jira_project.go'
+  - 'internal/provider/*jira_project_test.go'
 jira/projectavatar:
-  - 'internal/provider/*project_avatar.go'
-  - 'internal/provider/*project_avatar_test.go'
-jira/projectcategorie:
-  - 'internal/provider/*project_categorie.go'
-  - 'internal/provider/*project_categorie_test.go'
+  - 'internal/provider/*jira_project_avatar.go'
+  - 'internal/provider/*jira_project_avatar_test.go'
+jira/projectcategory:
+  - 'internal/provider/*jira_project_category.go'
+  - 'internal/provider/*jira_project_category_test.go'
 jira/projectcomponent:
-  - 'internal/provider/*project_component.go'
-  - 'internal/provider/*project_component_test.go'
+  - 'internal/provider/*jira_project_component.go'
+  - 'internal/provider/*jira_project_component_test.go'
 jira/projectemail:
-  - 'internal/provider/*project_email.go'
-  - 'internal/provider/*project_email_test.go'
+  - 'internal/provider/*jira_project_email.go'
+  - 'internal/provider/*jira_project_email_test.go'
 jira/projectfeature:
-  - 'internal/provider/*project_feature.go'
-  - 'internal/provider/*project_feature_test.go'
+  - 'internal/provider/*jira_project_feature.go'
+  - 'internal/provider/*jira_project_feature_test.go'
 jira/projectkeyandnamevalidation:
-  - 'internal/provider/*project_key_and_name_validation.go'
-  - 'internal/provider/*project_key_and_name_validation_test.go'
+  - 'internal/provider/*jira_project_key_and_name_validation.go'
+  - 'internal/provider/*jira_project_key_and_name_validation_test.go'
 jira/projectpermissionscheme:
-  - 'internal/provider/*project_permission_scheme.go'
-  - 'internal/provider/*project_permission_scheme_test.go'
-jira/projectpropertie:
-  - 'internal/provider/*project_propertie.go'
-  - 'internal/provider/*project_propertie_test.go'
+  - 'internal/provider/*jira_project_permission_scheme.go'
+  - 'internal/provider/*jira_project_permission_scheme_test.go'
+jira/projectproperty:
+  - 'internal/provider/*jira_project_property.go'
+  - 'internal/provider/*jira_project_property_test.go'
 jira/projectrole:
-  - 'internal/provider/*project_role.go'
-  - 'internal/provider/*project_role_test.go'
+  - 'internal/provider/*jira_project_role.go'
+  - 'internal/provider/*jira_project_role_test.go'
 jira/projectroleactor:
-  - 'internal/provider/*project_role_actor.go'
-  - 'internal/provider/*project_role_actor_test.go'
+  - 'internal/provider/*jira_project_role_actor.go'
+  - 'internal/provider/*jira_project_role_actor_test.go'
 jira/projecttype:
-  - 'internal/provider/*project_type.go'
-  - 'internal/provider/*project_type_test.go'
+  - 'internal/provider/*jira_project_type.go'
+  - 'internal/provider/*jira_project_type_test.go'
 jira/projectversion:
-  - 'internal/provider/*project_version.go'
-  - 'internal/provider/*project_version_test.go'
+  - 'internal/provider/*jira_project_version.go'
+  - 'internal/provider/*jira_project_version_test.go'
 jira/screen:
-  - 'internal/provider/*screen.go'
-  - 'internal/provider/*screen_test.go'
+  - 'internal/provider/*jira_screen.go'
+  - 'internal/provider/*jira_screen_test.go'
 jira/screenscheme:
-  - 'internal/provider/*screen_scheme.go'
-  - 'internal/provider/*screen_scheme_test.go'
+  - 'internal/provider/*jira_screen_scheme.go'
+  - 'internal/provider/*jira_screen_scheme_test.go'
 jira/screentab:
-  - 'internal/provider/*screen_tab.go'
-  - 'internal/provider/*screen_tab_test.go'
+  - 'internal/provider/*jira_screen_tab.go'
+  - 'internal/provider/*jira_screen_tab_test.go'
 jira/screentabfield:
-  - 'internal/provider/*screen_tab_field.go'
-  - 'internal/provider/*screen_tab_field_test.go'
+  - 'internal/provider/*jira_screen_tab_field.go'
+  - 'internal/provider/*jira_screen_tab_field_test.go'
 jira/serverinfo:
-  - 'internal/provider/*server_info.go'
-  - 'internal/provider/*server_info_test.go'
-jira/statu:
-  - 'internal/provider/*statu.go'
-  - 'internal/provider/*statu_test.go'
+  - 'internal/provider/*jira_server_info.go'
+  - 'internal/provider/*jira_server_info_test.go'
+jira/status:
+  - 'internal/provider/*jira_status.go'
+  - 'internal/provider/*jira_status_test.go'
 jira/task:
-  - 'internal/provider/*task.go'
-  - 'internal/provider/*task_test.go'
+  - 'internal/provider/*jira_task.go'
+  - 'internal/provider/*jira_task_test.go'
 jira/timetracking:
-  - 'internal/provider/*time_tracking.go'
-  - 'internal/provider/*time_tracking_test.go'
+  - 'internal/provider/*jira_time_tracking.go'
+  - 'internal/provider/*jira_time_tracking_test.go'
 jira/user:
-  - 'internal/provider/*user.go'
-  - 'internal/provider/*user_test.go'
-jira/userpropertie:
-  - 'internal/provider/*user_propertie.go'
-  - 'internal/provider/*user_propertie_test.go'
+  - 'internal/provider/*jira_user.go'
+  - 'internal/provider/*jira_user_test.go'
+jira/userproperty:
+  - 'internal/provider/*jira_user_property.go'
+  - 'internal/provider/*jira_user_property_test.go'
 jira/usersearch:
-  - 'internal/provider/*user_search.go'
-  - 'internal/provider/*user_search_test.go'
+  - 'internal/provider/*jira_user_search.go'
+  - 'internal/provider/*jira_user_search_test.go'
 jira/webhook:
-  - 'internal/provider/*webhook.go'
-  - 'internal/provider/*webhook_test.go'
+  - 'internal/provider/*jira_webhook.go'
+  - 'internal/provider/*jira_webhook_test.go'
 jira/workflow:
-  - 'internal/provider/*workflow.go'
-  - 'internal/provider/*workflow_test.go'
+  - 'internal/provider/*jira_workflow.go'
+  - 'internal/provider/*jira_workflow_test.go'
 jira/workflowscheme:
-  - 'internal/provider/*workflow_scheme.go'
-  - 'internal/provider/*workflow_scheme_test.go'
+  - 'internal/provider/*jira_workflow_scheme.go'
+  - 'internal/provider/*jira_workflow_scheme_test.go'
 jira/workflowschemedraft:
-  - 'internal/provider/*workflow_scheme_draft.go'
-  - 'internal/provider/*workflow_scheme_draft_test.go'
+  - 'internal/provider/*jira_workflow_scheme_draft.go'
+  - 'internal/provider/*jira_workflow_scheme_draft_test.go'
 jira/workflowschemeprojectassociation:
-  - 'internal/provider/*workflow_scheme_project_association.go'
-  - 'internal/provider/*workflow_scheme_project_association_test.go'
-jira/workflowstatuscategorie:
-  - 'internal/provider/*workflow_status_categorie.go'
-  - 'internal/provider/*workflow_status_categorie_test.go'
-jira/workflowstatuse:
-  - 'internal/provider/*workflow_statuse.go'
-  - 'internal/provider/*workflow_statuse_test.go'
-jira/workflowtransitionpropertie:
-  - 'internal/provider/*workflow_transition_propertie.go'
-  - 'internal/provider/*workflow_transition_propertie_test.go'
+  - 'internal/provider/*jira_workflow_scheme_project_association.go'
+  - 'internal/provider/*jira_workflow_scheme_project_association_test.go'
+jira/workflowstatus:
+  - 'internal/provider/*jira_workflow_status.go'
+  - 'internal/provider/*jira_workflow_status_test.go'
+jira/workflowstatuscategory:
+  - 'internal/provider/*jira_workflow_status_category.go'
+  - 'internal/provider/*jira_workflow_status_category_test.go'
+jira/workflowtransitionproperty:
+  - 'internal/provider/*jira_workflow_transition_property.go'
+  - 'internal/provider/*jira_workflow_transition_property_test.go'
 jira/workflowtransitionrule:
-  - 'internal/provider/*workflow_transition_rule.go'
-  - 'internal/provider/*workflow_transition_rule_test.go'
+  - 'internal/provider/*jira_workflow_transition_rule.go'
+  - 'internal/provider/*jira_workflow_transition_rule_test.go'
