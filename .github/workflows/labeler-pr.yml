@@ -1,7 +1,8 @@
+name: Pull Request Triage (All Types)
+
 on:
   - pull_request_target
 
-name: Pull Request Triage (All Types)
 
 env:
   IN_MAINTAINER_LIST: ${{ contains(secrets.MAINTAINER_LIST, github.actor) }}
