@@ -122,6 +122,6 @@ resource "github_issue_label" "product" {
 
   repository  = "terraform-provider-sandbox"
   name        = each.value
-  color       = "5a4fdd" # color: terraform registry banner
+  color       = "5a4fdd" # color: https://registry.terraform.io/ logo
   description = "Issues and PRs that pertain to ${each.value} resources."
 }
