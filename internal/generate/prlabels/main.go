@@ -35,15 +35,15 @@ func main() {
 	td.Names = append(td.Names, lbs...)
 
 	sort.SliceStable(td.Names, func(i, j int) bool {
-		return td.Names[i].WithUnderscore < td.Names[j].WithUnderscore
+		return td.Names[i].LowerCasePlural < td.Names[j].LowerCasePlural
 	})
 
 	writeTemplate(tmpl, "prlabeler", td)
 }
 
 type Label struct {
-	LowerCase      string
-	WithUnderscore string
+	LowerCasePlural        string
+	WithUnderscoreSingular string
 }
 
 func getLabels() []Label {
@@ -127,18 +127,15 @@ func singularizeLabelSuffix(input string) Label {
 	b2 := s.MatchString(input)
 	b3 := ses.MatchString(input)
 
+	sl.LowerCasePlural = strings.ToLower(strings.ReplaceAll(input, " ", ""))
 	if b1 {
-		sl.LowerCase = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "")), "ies") + "y"
-		sl.WithUnderscore = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "ies") + "y"
+		sl.WithUnderscoreSingular = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "ies") + "y"
 	} else if b2 {
-		sl.LowerCase = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "")), "s")
-		sl.WithUnderscore = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "s")
+		sl.WithUnderscoreSingular = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "s")
 	} else if b3 {
-		sl.LowerCase = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "")), "es")
-		sl.WithUnderscore = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "es")
+		sl.WithUnderscoreSingular = strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "es")
 	} else {
-		sl.LowerCase = strings.ToLower(strings.ReplaceAll(input, " ", ""))
-		sl.WithUnderscore = strings.ToLower(strings.ReplaceAll(input, " ", "_"))
+		sl.WithUnderscoreSingular = strings.ToLower(strings.ReplaceAll(input, " ", "_"))
 	}
 
 	return sl
@@ -172,8 +169,8 @@ repository:
 tests:
   - '**/*_test.go'
 {{- range .Names }}
-jira/{{ .LowerCase }}:
-  - 'internal/provider/*jira_{{ .WithUnderscore }}.go'
-  - 'internal/provider/*jira_{{ .WithUnderscore }}_test.go'
+jira/{{ .LowerCasePlural }}:
+  - 'internal/provider/*jira_{{ .WithUnderscoreSingular }}.go'
+  - 'internal/provider/*jira_{{ .WithUnderscoreSingular }}_test.go'
 {{- end }}
 `
