@@ -80,6 +80,7 @@ func getResources(url string) []Resource {
 	productName := r2.FindString(url)
 	var tags = result["tags"].([]interface{})
 	var resources []Resource
+	replacer := strings.NewReplacer(" ", "", "-", "")
 	for _, value := range tags {
 		// Each value is an interface{} type, that is type asserted as map[string]interface{}
 		// due to nested objects in the original JSON response
@@ -90,7 +91,7 @@ func getResources(url string) []Resource {
 			continue
 		}
 		rsc := Resource{}
-		rsc.Name = productName + "/" + strings.ToLower(strings.ReplaceAll(rawLabel.(string), " ", ""))
+		rsc.Name = productName + "/" + strings.ToLower(replacer.Replace(rawLabel.(string)))
 		resources = append(resources, rsc)
 	}
 	return resources

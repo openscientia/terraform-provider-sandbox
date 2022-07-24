@@ -4,12 +4,12 @@ variable "resource_labels" {
     "confluence/analytics",
     "confluence/audit",
     "confluence/content",
-    "confluence/content-attachments",
-    "confluence/content-childrenanddescendants",
-    "confluence/content-macrobody",
+    "confluence/contentattachments",
     "confluence/contentbody",
+    "confluence/contentchildrenanddescendants",
     "confluence/contentcomments",
     "confluence/contentlabels",
+    "confluence/contentmacrobody",
     "confluence/contentpermissions",
     "confluence/contentproperties",
     "confluence/contentrestrictions",
@@ -21,7 +21,7 @@ variable "resource_labels" {
     "confluence/group",
     "confluence/inlinetasks",
     "confluence/labelinfo",
-    "confluence/long-runningtask",
+    "confluence/longrunningtask",
     "confluence/relation",
     "confluence/search",
     "confluence/settings",
@@ -120,8 +120,8 @@ variable "resource_labels" {
 resource "github_issue_label" "resource" {
   for_each = var.resource_labels
 
-  repository  = "terraform-provider-sanbox"
-  name        = each.value
+  repository  = "terraform-provider-atlassian"
+  name        = "${each.value}"
   color       = "5a4edd" # color: https://registry.terraform.io/
   description = "Issues and PRs that pertain to ${each.value} resources."
 }
