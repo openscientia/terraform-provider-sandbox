@@ -1,5 +1,5 @@
 <p align="center">
-<img src=".github/gopher2.png" alt="gopher logo" title="gopher" height="300" />
+<img src=".github/gopher-logo.png" alt="gopher logo" title="gopher" height="300" />
 </p>
 
 # Terraform Provider Scaffolding (Terraform Plugin Framework)
