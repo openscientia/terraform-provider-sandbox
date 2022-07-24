@@ -1,6 +1,4 @@
-<a href="https://github.com/openscientia/terraform-provider-sandbox">
-    <img src=".github/gopher2.png" alt="gopher logo" title="gopher" align="left" height="80" />
-</a>
+<img src=".github/gopher2.png" alt="gopher logo" title="gopher" align="left" height="80" />
 
 # Terraform Provider Scaffolding (Terraform Plugin Framework)
 
