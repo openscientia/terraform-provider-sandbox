@@ -55,7 +55,7 @@ variable "common_labels" {
       description = "Introduces a new product."
     },
     "provider" = {
-      color       = "5a4fdd",
+      color       = "00ff00",
       description = "Pertains to the provider itself, rather than any interaction with AWS.",
     },
     "repository" = {
