@@ -120,7 +120,7 @@ variable "product_labels" {
 resource "github_issue_label" "product" {
   for_each = var.product_labels
 
-  repository  = "terraform-provider-atlassian"
+  repository  = "terraform-provider-sandbox"
   name        = each.value
   color       = "5a4fdd" # color: terraform registry banner
   description = "Issues and PRs that pertain to ${each.value} resources."

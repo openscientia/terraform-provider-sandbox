@@ -79,7 +79,7 @@ variable "common_labels" {
 resource "github_issue_label" "common" {
   for_each = var.common_labels
 
-  repository  = "terraform-provider-atlassian"
+  repository  = "terraform-provider-sandbox"
   name        = each.key
   color       = each.value.color
   description = each.value.description
