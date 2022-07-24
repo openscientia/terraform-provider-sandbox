@@ -184,7 +184,7 @@ provider:
 repository:
   - '.github/**/*'
   - 'GNUmakefile'
-  - 'infra'
+  - 'infrastructure/**/*'
 tests:
   - '**/*_test.go'
 {{- range .Labels }}

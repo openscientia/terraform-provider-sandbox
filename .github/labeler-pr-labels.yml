@@ -22,7 +22,7 @@ provider:
 repository:
   - '.github/**/*'
   - 'GNUmakefile'
-  - 'infra'
+  - 'infrastructure/**/*'
 tests:
   - '**/*_test.go'
 confluence/analytics:
