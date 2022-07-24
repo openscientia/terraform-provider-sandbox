@@ -2,8 +2,6 @@
 
 package main
 
-// package prlabels
-
 import (
 	"bytes"
 	"encoding/json"
