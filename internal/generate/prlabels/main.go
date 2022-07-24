@@ -24,8 +24,8 @@ const (
 )
 
 type Label struct {
-	LowerCasePlural        string
-	WithUnderscoreSingular string
+	DefaultPlural     string
+	SnakeCaseSingular string
 }
 
 type templateData struct {
@@ -37,6 +37,7 @@ func main() {
 
 	productUrls := []string{
 		"https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
+		"https://developer.atlassian.com/cloud/confluence/swagger.v3.json",
 	}
 
 	lbs := []Label{}
@@ -49,7 +50,7 @@ func main() {
 	td.Labels = append(td.Labels, lbs...)
 
 	sort.SliceStable(td.Labels, func(i, j int) bool {
-		return td.Labels[i].LowerCasePlural < td.Labels[j].LowerCasePlural
+		return td.Labels[i].DefaultPlural < td.Labels[j].DefaultPlural
 	})
 
 	writeTemplate(tmpl, "prlabeler", td)
@@ -87,12 +88,12 @@ func getLabels(url string) []Label {
 		// Each value is an interface{} type, that is type asserted as map[string]interface{}
 		// due to nested objects in the original JSON response
 		m := value.(map[string]interface{})
-		rawLabel := m["name"]
-		ok := r.MatchString(rawLabel.(string))
+		rawLabel := m["name"].(string)
+		ok := r.MatchString(rawLabel)
 		if ok {
 			continue
 		}
-		l := singularizeLabelSuffix(productName, rawLabel.(string))
+		l := singularizeLabelSuffix(productName, rawLabel)
 		labels = append(labels, l)
 	}
 
@@ -127,28 +128,36 @@ func writeTemplate(body string, templateName string, td templateData) {
 	}
 }
 
+var (
+	sr  = strings.NewReplacer(" ", "", "-", "")
+	sr2 = strings.NewReplacer(" - ", " ", "-", " ")
+	sr3 = strings.NewReplacer(" ", "_")
+	sr4 = strings.NewReplacer("__", "_")
+
+	ies = regexp.MustCompile(`.*ies$`)                                        // match: propert[ies]
+	s   = regexp.MustCompile(`.*[^aeiou]s$|.*[aeiouy][^s]es$|.*[aeiou]{2}s$`) // match: workflow[s] or module[s] or  issue[s]
+	ses = regexp.MustCompile(`.*ses$`)                                        // match: statu[ses]
+	es  = regexp.MustCompile(`.*[^aeiou]{2}es`)                               // match: watch[es], bush[es]
+)
+
 func singularizeLabelSuffix(product, input string) Label {
 	l := Label{}
 
-	ies := regexp.MustCompile(`.*ies$`)
-	s := regexp.MustCompile(`.*[^aeiou]s$|.*[^s]es$`)
-	ses := regexp.MustCompile(`.*ses$`)
-
-	b1 := ies.MatchString(input)
-	b2 := s.MatchString(input)
-	b3 := ses.MatchString(input)
-	r := strings.NewReplacer(" ", "", "-", "")
-	//r2 := strings.NewReplacer(" ", "_", "-", "_")
-	l.LowerCasePlural = product + "/" + strings.ToLower(r.Replace(input))
-	if b1 {
-		l.WithUnderscoreSingular = product + "/" + strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "ies") + "y"
-	} else if b2 {
-		l.WithUnderscoreSingular = product + "/" + strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "s")
-	} else if b3 {
-		l.WithUnderscoreSingular = product + "/" + strings.TrimSuffix(strings.ToLower(strings.ReplaceAll(input, " ", "_")), "es")
+	l.DefaultPlural = product + "/" + strings.ToLower(sr.Replace(input))
+	var str string
+	if ies.MatchString(input) {
+		str = strings.TrimSuffix(strings.ToLower(sr4.Replace(sr3.Replace(sr2.Replace(input)))), "ies") + "y"
+	} else if s.MatchString(input) {
+		str = strings.TrimSuffix(strings.ToLower(sr4.Replace(sr3.Replace(sr2.Replace(input)))), "s")
+	} else if ses.MatchString(input) {
+		str = strings.TrimSuffix(strings.ToLower(sr4.Replace(sr3.Replace(sr2.Replace(input)))), "es")
+	} else if es.MatchString(input) {
+		str = strings.TrimSuffix(strings.ToLower(sr4.Replace(sr3.Replace(sr2.Replace(input)))), "es")
 	} else {
-		l.WithUnderscoreSingular = product + "/" + strings.ToLower(strings.ReplaceAll(input, " ", "_"))
+		str = strings.ToLower(sr4.Replace(sr3.Replace(sr2.Replace(input))))
 	}
+
+	l.SnakeCaseSingular = product + "_" + str
 
 	return l
 }
@@ -181,8 +190,8 @@ repository:
 tests:
   - '**/*_test.go'
 {{- range .Labels }}
-{{ .LowerCasePlural }}:
-  - 'internal/provider/*{{ .WithUnderscoreSingular }}.go'
-  - 'internal/provider/*{{ .WithUnderscoreSingular }}_test.go'
+{{ .DefaultPlural }}:
+  - 'internal/provider/*{{ .SnakeCaseSingular }}.go'
+  - 'internal/provider/*{{ .SnakeCaseSingular }}_test.go'
 {{- end }}
 `

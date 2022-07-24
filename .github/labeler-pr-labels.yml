@@ -25,6 +25,99 @@ repository:
   - 'infra'
 tests:
   - '**/*_test.go'
+confluence/analytics:
+  - 'internal/provider/*confluence_analytic.go'
+  - 'internal/provider/*confluence_analytic_test.go'
+confluence/audit:
+  - 'internal/provider/*confluence_audit.go'
+  - 'internal/provider/*confluence_audit_test.go'
+confluence/content:
+  - 'internal/provider/*confluence_content.go'
+  - 'internal/provider/*confluence_content_test.go'
+confluence/contentattachments:
+  - 'internal/provider/*confluence_content_attachment.go'
+  - 'internal/provider/*confluence_content_attachment_test.go'
+confluence/contentbody:
+  - 'internal/provider/*confluence_content_body.go'
+  - 'internal/provider/*confluence_content_body_test.go'
+confluence/contentchildrenanddescendants:
+  - 'internal/provider/*confluence_content_children_and_descendant.go'
+  - 'internal/provider/*confluence_content_children_and_descendant_test.go'
+confluence/contentcomments:
+  - 'internal/provider/*confluence_content_comment.go'
+  - 'internal/provider/*confluence_content_comment_test.go'
+confluence/contentlabels:
+  - 'internal/provider/*confluence_content_label.go'
+  - 'internal/provider/*confluence_content_label_test.go'
+confluence/contentmacrobody:
+  - 'internal/provider/*confluence_content_macro_body.go'
+  - 'internal/provider/*confluence_content_macro_body_test.go'
+confluence/contentpermissions:
+  - 'internal/provider/*confluence_content_permission.go'
+  - 'internal/provider/*confluence_content_permission_test.go'
+confluence/contentproperties:
+  - 'internal/provider/*confluence_content_property.go'
+  - 'internal/provider/*confluence_content_property_test.go'
+confluence/contentrestrictions:
+  - 'internal/provider/*confluence_content_restriction.go'
+  - 'internal/provider/*confluence_content_restriction_test.go'
+confluence/contentstates:
+  - 'internal/provider/*confluence_content_state.go'
+  - 'internal/provider/*confluence_content_state_test.go'
+confluence/contentversions:
+  - 'internal/provider/*confluence_content_version.go'
+  - 'internal/provider/*confluence_content_version_test.go'
+confluence/contentwatches:
+  - 'internal/provider/*confluence_content_watch.go'
+  - 'internal/provider/*confluence_content_watch_test.go'
+confluence/dynamicmodules:
+  - 'internal/provider/*confluence_dynamic_module.go'
+  - 'internal/provider/*confluence_dynamic_module_test.go'
+confluence/experimental:
+  - 'internal/provider/*confluence_experimental.go'
+  - 'internal/provider/*confluence_experimental_test.go'
+confluence/group:
+  - 'internal/provider/*confluence_group.go'
+  - 'internal/provider/*confluence_group_test.go'
+confluence/inlinetasks:
+  - 'internal/provider/*confluence_inline_task.go'
+  - 'internal/provider/*confluence_inline_task_test.go'
+confluence/labelinfo:
+  - 'internal/provider/*confluence_label_info.go'
+  - 'internal/provider/*confluence_label_info_test.go'
+confluence/longrunningtask:
+  - 'internal/provider/*confluence_long_running_task.go'
+  - 'internal/provider/*confluence_long_running_task_test.go'
+confluence/relation:
+  - 'internal/provider/*confluence_relation.go'
+  - 'internal/provider/*confluence_relation_test.go'
+confluence/search:
+  - 'internal/provider/*confluence_search.go'
+  - 'internal/provider/*confluence_search_test.go'
+confluence/settings:
+  - 'internal/provider/*confluence_setting.go'
+  - 'internal/provider/*confluence_setting_test.go'
+confluence/space:
+  - 'internal/provider/*confluence_space.go'
+  - 'internal/provider/*confluence_space_test.go'
+confluence/spacepermissions:
+  - 'internal/provider/*confluence_space_permission.go'
+  - 'internal/provider/*confluence_space_permission_test.go'
+confluence/spaceproperties:
+  - 'internal/provider/*confluence_space_property.go'
+  - 'internal/provider/*confluence_space_property_test.go'
+confluence/spacesettings:
+  - 'internal/provider/*confluence_space_setting.go'
+  - 'internal/provider/*confluence_space_setting_test.go'
+confluence/template:
+  - 'internal/provider/*confluence_template.go'
+  - 'internal/provider/*confluence_template_test.go'
+confluence/themes:
+  - 'internal/provider/*confluence_theme.go'
+  - 'internal/provider/*confluence_theme_test.go'
+confluence/users:
+  - 'internal/provider/*confluence_user.go'
+  - 'internal/provider/*confluence_user_test.go'
 jira/announcementbanner:
   - 'internal/provider/*jira_announcement_banner.go'
   - 'internal/provider/*jira_announcement_banner_test.go'
