@@ -7,5 +7,6 @@ testacc:
 
 gen: 
 	rm -f .github/labeler-pr-labels.yml
+	rm -f .github/labeler-issue-labels.yml
 	rm -f infrastructure/repository/labels-resource.tf
 	go generate ./...
