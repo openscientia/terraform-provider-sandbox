@@ -5,225 +5,225 @@
 # Catch the following:
 # 1. List items (* or -) with atlassian_XXX resource prefix (with or without backticks)
 # 2. "data atlassian_XXX" or "resource atlassian_XXX"
-	confluence/analytics:
+confluence/analytics:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_analytic'
-	confluence/audit:
+confluence/audit:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_audit'
-	confluence/content:
+confluence/content:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content'
-	confluence/contentattachments:
+confluence/contentattachments:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_attachment'
-	confluence/contentbody:
+confluence/contentbody:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_body'
-	confluence/contentchildrenanddescendants:
+confluence/contentchildrenanddescendants:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_children_and_descendant'
-	confluence/contentcomments:
+confluence/contentcomments:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_comment'
-	confluence/contentlabels:
+confluence/contentlabels:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_label'
-	confluence/contentmacrobody:
+confluence/contentmacrobody:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_macro_body'
-	confluence/contentpermissions:
+confluence/contentpermissions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_permission'
-	confluence/contentproperties:
+confluence/contentproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_property'
-	confluence/contentrestrictions:
+confluence/contentrestrictions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_restriction'
-	confluence/contentstates:
+confluence/contentstates:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_state'
-	confluence/contentversions:
+confluence/contentversions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_version'
-	confluence/contentwatches:
+confluence/contentwatches:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_content_watch'
-	confluence/dynamicmodules:
+confluence/dynamicmodules:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_dynamic_module'
-	confluence/experimental:
+confluence/experimental:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_experimental'
-	confluence/group:
+confluence/group:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_group'
-	confluence/inlinetasks:
+confluence/inlinetasks:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_inline_task'
-	confluence/labelinfo:
+confluence/labelinfo:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_label_info'
-	confluence/longrunningtask:
+confluence/longrunningtask:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_long_running_task'
-	confluence/relation:
+confluence/relation:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_relation'
-	confluence/search:
+confluence/search:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_search'
-	confluence/settings:
+confluence/settings:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_setting'
-	confluence/space:
+confluence/space:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_space'
-	confluence/spacepermissions:
+confluence/spacepermissions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_space_permission'
-	confluence/spaceproperties:
+confluence/spaceproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_space_property'
-	confluence/spacesettings:
+confluence/spacesettings:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_space_setting'
-	confluence/template:
+confluence/template:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_template'
-	confluence/themes:
+confluence/themes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_theme'
-	confluence/users:
+confluence/users:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_confluence_user'
-	jira/announcementbanner:
+jira/announcementbanner:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_announcement_banner'
-	jira/applicationroles:
+jira/applicationroles:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_application_role'
-	jira/appmigration:
+jira/appmigration:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_app_migration'
-	jira/appproperties:
+jira/appproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_app_property'
-	jira/auditrecords:
+jira/auditrecords:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_audit_record'
-	jira/avatars:
+jira/avatars:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_avatar'
-	jira/dashboards:
+jira/dashboards:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_dashboard'
-	jira/dynamicmodules:
+jira/dynamicmodules:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_dynamic_module'
-	jira/filters:
+jira/filters:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_filter'
-	jira/filtersharing:
+jira/filtersharing:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_filter_sharing'
-	jira/groupanduserpicker:
+jira/groupanduserpicker:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_group_and_user_picker'
-	jira/groups:
+jira/groups:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_group'
-	jira/instanceinformation:
+jira/instanceinformation:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_instance_information'
-	jira/issueattachments:
+jira/issueattachments:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_attachment'
-	jira/issuecommentproperties:
+jira/issuecommentproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_comment_property'
-	jira/issuecomments:
+jira/issuecomments:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_comment'
-	jira/issuecustomfieldcontexts:
+jira/issuecustomfieldcontexts:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_custom_field_context'
-	jira/issuecustomfieldoptions:
+jira/issuecustomfieldoptions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_custom_field_option'
-	jira/issuefieldconfigurations:
+jira/issuefieldconfigurations:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_field_configuration'
-	jira/issuefields:
+jira/issuefields:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_field'
-	jira/issuelinks:
+jira/issuelinks:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_link'
-	jira/issuelinktypes:
+jira/issuelinktypes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_link_type'
-	jira/issuenavigatorsettings:
+jira/issuenavigatorsettings:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_navigator_setting'
-	jira/issuenotificationschemes:
+jira/issuenotificationschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_notification_scheme'
-	jira/issuepriorities:
+jira/issuepriorities:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_priority'
-	jira/issueproperties:
+jira/issueproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_property'
-	jira/issueremotelinks:
+jira/issueremotelinks:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_remote_link'
-	jira/issueresolutions:
+jira/issueresolutions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_resolution'
-	jira/issues:
+jira/issues:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue'
-	jira/issuesearch:
+jira/issuesearch:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_search'
-	jira/issuesecuritylevel:
+jira/issuesecuritylevel:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_security_level'
-	jira/issuesecurityschemes:
+jira/issuesecurityschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_security_scheme'
-	jira/issuetypeproperties:
+jira/issuetypeproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_type_property'
-	jira/issuetypes:
+jira/issuetypes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_type'
-	jira/issuetypeschemes:
+jira/issuetypeschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_type_scheme'
-	jira/issuetypescreenschemes:
+jira/issuetypescreenschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_type_screen_scheme'
-	jira/issuevotes:
+jira/issuevotes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_vote'
-	jira/issuewatchers:
+jira/issuewatchers:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_watcher'
-	jira/issueworklogproperties:
+jira/issueworklogproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_worklog_property'
-	jira/issueworklogs:
+jira/issueworklogs:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_issue_worklog'
-	jira/jiraexpressions:
+jira/jiraexpressions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_jira_expression'
-	jira/jirasettings:
+jira/jirasettings:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_jira_setting'
-	jira/jql:
+jira/jql:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_jql'
-	jira/labels:
+jira/labels:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_label'
-	jira/myself:
+jira/myself:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_myself'
-	jira/permissions:
+jira/permissions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_permission'
-	jira/permissionschemes:
+jira/permissionschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_permission_scheme'
-	jira/projectavatars:
+jira/projectavatars:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_avatar'
-	jira/projectcategories:
+jira/projectcategories:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_category'
-	jira/projectcomponents:
+jira/projectcomponents:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_component'
-	jira/projectemail:
+jira/projectemail:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_email'
-	jira/projectfeatures:
+jira/projectfeatures:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_feature'
-	jira/projectkeyandnamevalidation:
+jira/projectkeyandnamevalidation:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_key_and_name_validation'
-	jira/projectpermissionschemes:
+jira/projectpermissionschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_permission_scheme'
-	jira/projectproperties:
+jira/projectproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_property'
-	jira/projectroleactors:
+jira/projectroleactors:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_role_actor'
-	jira/projectroles:
+jira/projectroles:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_role'
-	jira/projects:
+jira/projects:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project'
-	jira/projecttypes:
+jira/projecttypes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_type'
-	jira/projectversions:
+jira/projectversions:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_project_version'
-	jira/screens:
+jira/screens:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_screen'
-	jira/screenschemes:
+jira/screenschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_screen_scheme'
-	jira/screentabfields:
+jira/screentabfields:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_screen_tab_field'
-	jira/screentabs:
+jira/screentabs:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_screen_tab'
-	jira/serverinfo:
+jira/serverinfo:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_server_info'
-	jira/status:
+jira/status:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_status'
-	jira/tasks:
+jira/tasks:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_task'
-	jira/timetracking:
+jira/timetracking:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_time_tracking'
-	jira/userproperties:
+jira/userproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_user_property'
-	jira/users:
+jira/users:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_user'
-	jira/usersearch:
+jira/usersearch:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_user_search'
-	jira/webhooks:
+jira/webhooks:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_webhook'
-	jira/workflows:
+jira/workflows:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow'
-	jira/workflowschemedrafts:
+jira/workflowschemedrafts:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_scheme_draft'
-	jira/workflowschemeprojectassociations:
+jira/workflowschemeprojectassociations:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_scheme_project_association'
-	jira/workflowschemes:
+jira/workflowschemes:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_scheme'
-	jira/workflowstatuscategories:
+jira/workflowstatuscategories:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_status_category'
-	jira/workflowstatuses:
+jira/workflowstatuses:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_status'
-	jira/workflowtransitionproperties:
+jira/workflowtransitionproperties:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_transition_property'
-	jira/workflowtransitionrules:
+jira/workflowtransitionrules:
   - '((\*|-)\s*`?|(data|resource)\s+"?)atlassian_jira_workflow_transition_rule'
