@@ -15,6 +15,7 @@ jobs:
       with:
         configuration-path: .github/labeler-pr-labels.yml
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        # do not remove labels added manually
         sync-labels: false
   NeedsTriageLabeler:
     runs-on: ubuntu-latest
@@ -25,5 +26,6 @@ jobs:
       with:
         configuration-path: .github/labeler-pr-needs-triage.yml
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        # do not remove labels added manually
         sync-labels: false
   
